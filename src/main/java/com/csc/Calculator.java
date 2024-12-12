@@ -53,4 +53,10 @@ public class Calculator {
   public int sumEZ(int[] nums){
     return Arrays.stream(nums).sum();
   }
+
+  public int[] filterEvenNumbers(int[] numbers) {
+    return Arrays.stream(numbers)
+                 .filter(num -> num % 2 == 0)
+                 .toArray();
+  }
 }
