@@ -64,11 +64,20 @@ public class TestCalculator {
   }
 
   @Test
-  public void testFilterEvenNumbers_MixedArray() {
+  public void testFilterEvenNumbers() {
     int[] input = {1, 2, 3, 4, 5, 6};
     int[] expected = {2, 4, 6};
         
     int[] result = calculator.filterEvenNumbers(input);
+    assertArrayEquals(expected, result);
+  }
+
+  @Test
+  public void testFilterOddNumbers() {
+    int[] input = {1, 2, 3, 4, 5, 6};
+    int[] expected = {1, 3, 5};
+        
+    int[] result = calculator.filterOddNumbers(input);
     assertArrayEquals(expected, result);
   }
 }

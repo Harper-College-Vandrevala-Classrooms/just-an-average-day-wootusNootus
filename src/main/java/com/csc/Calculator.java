@@ -59,4 +59,10 @@ public class Calculator {
                  .filter(num -> num % 2 == 0)
                  .toArray();
   }
+
+  public int[] filterOddNumbers(int[] numbers) {
+    return Arrays.stream(numbers)
+                 .filter(num -> num % 2 == 1)
+                 .toArray();
+  }
 }
